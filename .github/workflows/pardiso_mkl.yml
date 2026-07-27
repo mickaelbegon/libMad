@@ -32,7 +32,14 @@ jobs:
       - name: Add JuliaC to PATH
         run: echo "$HOME/.julia/bin" >> "$GITHUB_PATH"
       - name: Resolve PARDISO MKL dependencies
-        run: julia --project=. -e 'using Pkg; Pkg.resolve()'
+        run: |
+          rm -f Manifest.toml
+          julia --project=. -e 'using Pkg; Pkg.resolve()'
+      - name: Save resolved Linux manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: linux-julia-manifest
+          path: Manifest.toml
       - name: Configure and build
         run: |
           cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$PWD/build/install"
