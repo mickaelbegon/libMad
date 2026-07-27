@@ -24,9 +24,6 @@ SolverCore = "ff4d7338-4cf1-434d-91df-b86cb86fb843"
 
 [sources]
 CCOpt = {url = "https://github.com/MadNLP/CCOpt.jl.git", rev = "master"}
-MadNLP = {url = "https://github.com/MadNLP/MadNLP.jl.git", rev = "7fed8533cbeae84546bab6c8768d610fef9af192"}
-MadNLPGPU = {url = "https://github.com/MadNLP/MadNLP.jl.git", rev = "7fed8533cbeae84546bab6c8768d610fef9af192", subdir = "lib/MadNLPGPU"}
-MadNLPPardiso = {url = "https://github.com/MadNLP/MadNLP.jl.git", rev = "7fed8533cbeae84546bab6c8768d610fef9af192", subdir = "lib/MadNLPPardiso"}
 
 [compat]
 BFloat16s = "0.6.1"
