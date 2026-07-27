@@ -28,7 +28,7 @@ jobs:
         with:
           channel: "1.12"
       - name: Install JuliaC
-        run: julia -e 'using Pkg; Pkg.add(name="JuliaC", version="0.3.8"); Pkg.Apps.add(name="JuliaC", version="0.3.8")'
+        run: julia -e 'using Pkg; Pkg.add(url="https://github.com/apozharski/JuliaC.jl.git", rev="73be8587a80bbb65dab7acd71d406f72867a3571"); Pkg.Apps.add(url="https://github.com/apozharski/JuliaC.jl.git", rev="73be8587a80bbb65dab7acd71d406f72867a3571")'
       - name: Add JuliaC to PATH
         run: echo "$HOME/.julia/bin" >> "$GITHUB_PATH"
       - name: Configure and build
