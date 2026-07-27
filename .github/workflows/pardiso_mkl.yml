@@ -31,15 +31,8 @@ jobs:
         run: julia -e 'using Pkg; Pkg.add(url="https://github.com/apozharski/JuliaC.jl.git", rev="73be8587a80bbb65dab7acd71d406f72867a3571"); Pkg.Apps.add(url="https://github.com/apozharski/JuliaC.jl.git", rev="73be8587a80bbb65dab7acd71d406f72867a3571")'
       - name: Add JuliaC to PATH
         run: echo "$HOME/.julia/bin" >> "$GITHUB_PATH"
-      - name: Resolve PARDISO MKL dependencies
-        run: |
-          rm -f Manifest.toml
-          julia --project=. -e 'using Pkg; Pkg.resolve()'
-      - name: Save resolved Linux manifest
-        uses: actions/upload-artifact@v4
-        with:
-          name: linux-julia-manifest
-          path: Manifest.toml
+      - name: Instantiate PARDISO MKL dependencies
+        run: julia --project=. -e 'using Pkg; Pkg.instantiate()'
       - name: Configure and build
         run: |
           cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$PWD/build/install"

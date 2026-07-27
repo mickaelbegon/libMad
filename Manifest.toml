@@ -1,8 +1,8 @@
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.12.4"
+julia_version = "1.12.6"
 manifest_format = "2.0"
-project_hash = "1840f8eda337f7c418e4bd46c06d0482ce33b1e7"
+project_hash = "f0f8d657da5e6d89c5186506e743951945de2284"
 
 [[deps.AMD]]
 deps = ["LinearAlgebra", "SparseArrays", "SuiteSparse_jll"]
@@ -25,10 +25,10 @@ version = "1.5.0"
     Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [[deps.Adapt]]
-deps = ["LinearAlgebra", "Requires"]
-git-tree-sha1 = "0761717147821d696c9470a7a86364b2fbd22fd8"
+deps = ["LinearAlgebra"]
+git-tree-sha1 = "daa72978cd7a624246e894a4f4f067706d4e17e2"
 uuid = "79e6a3ab-5dfb-504d-930d-738a2a938a0e"
-version = "4.5.2"
+version = "4.7.0"
 weakdeps = ["SparseArrays", "StaticArrays"]
 
     [deps.Adapt.extensions]
@@ -74,7 +74,7 @@ version = "1.11.0"
 [[deps.CCOpt]]
 deps = ["DataStructures", "LinearAlgebra", "MadNLP", "NLPModels", "Printf", "Serialization", "SolverCore", "SparseArrays"]
 git-tree-sha1 = "33bbceb8fbad4062f5be937507bc00e22b955aaf"
-repo-rev = "master"
+repo-rev = "cb7080545ef33ce5c430663f4027d4a7a4807bc5"
 repo-url = "https://github.com/MadNLP/CCOpt.jl.git"
 uuid = "6689419a-93c1-455a-8ac6-77991ec4f86b"
 version = "0.1.0"
@@ -94,11 +94,9 @@ version = "0.5.0"
 
 [[deps.CUDA]]
 deps = ["AbstractFFTs", "Adapt", "BFloat16s", "CEnum", "CUDA_Compiler_jll", "CUDA_Driver_jll", "CUDA_Runtime_Discovery", "CUDA_Runtime_jll", "Crayons", "ExprTools", "GPUArrays", "GPUCompiler", "GPUToolbox", "KernelAbstractions", "LLVM", "LLVMLoopInfo", "LazyArtifacts", "Libdl", "LinearAlgebra", "Logging", "NVTX", "Preferences", "PrettyTables", "Printf", "Random", "Random123", "RandomNumbers", "Reexport", "SparseArrays", "StaticArrays", "Statistics", "demumble_jll"]
-git-tree-sha1 = "a1eb5e5b173d02bdddfa4234e36b44286ea1661d"
-repo-rev = "ap/local-compiler-backport"
-repo-url = "https://github.com/apozharski/CUDA.jl.git"
+git-tree-sha1 = "b267c611dcbbcb70d42e398192ee0af160358075"
 uuid = "052768ef-5323-5732-b1bb-66c8b64840ba"
-version = "5.11.0"
+version = "5.11.1"
 
     [deps.CUDA.extensions]
     ChainRulesCoreExt = "ChainRulesCore"
@@ -114,21 +112,21 @@ version = "5.11.0"
 
 [[deps.CUDA_Compiler_jll]]
 deps = ["Artifacts", "CUDA_Driver_jll", "CUDA_Runtime_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
-git-tree-sha1 = "b977706846cb0a75d3842a1fed810ab2e6ab2f94"
+git-tree-sha1 = "c32d22f2f563ce192c88a44b09c2b569f1e7a980"
 uuid = "d1e2174e-dfdc-576e-b43e-73b79eb1aca8"
-version = "0.4.3+0"
+version = "0.4.4+1"
 
 [[deps.CUDA_Driver_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "TOML"]
-git-tree-sha1 = "3b759ec65ac87ad192c2925114fa5c126657a5bd"
+git-tree-sha1 = "ff4a0abf98be36d9fa15ca7e968df562a210ab4b"
 uuid = "4ee394cb-3365-5eb0-8335-949819d2adfc"
-version = "13.2.1+0"
+version = "13.3.0+1"
 
 [[deps.CUDA_Runtime_Discovery]]
 deps = ["Libdl"]
-git-tree-sha1 = "4fd010410c0c91c8b9bd6194a9ebdebecd9a8107"
+git-tree-sha1 = "f9a521f52d236fe49f1028d69e549e7f2644bb72"
 uuid = "1af6417a-86b4-443c-805f-a4643ffb695f"
-version = "2.0.0"
+version = "1.0.0"
 
 [[deps.CUDA_Runtime_jll]]
 deps = ["Artifacts", "CUDA_Driver_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
@@ -138,9 +136,7 @@ version = "0.21.0+1"
 
 [[deps.CUDSS]]
 deps = ["CEnum", "CUDA", "CUDA_Runtime_Discovery", "CUDSS_jll", "GPUToolbox", "LinearAlgebra", "SparseArrays"]
-git-tree-sha1 = "f942df152160eb0c4f18fb9d907a294398d79d0d"
-repo-rev = "20a99ed"
-repo-url = "https://github.com/apozharski/CUDSS.jl.git"
+git-tree-sha1 = "715c81db8d627a18d3d1806b068e370dbf724bfc"
 uuid = "45b445bb-4962-46a0-9369-b4df9d0f772e"
 version = "0.6.7"
 
@@ -166,9 +162,9 @@ uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
 version = "1.3.0+1"
 
 [[deps.Crayons]]
-git-tree-sha1 = "249fe38abf76d48563e2f4556bebd215aa317e15"
+git-tree-sha1 = "54b76cbb40d9a0f5368c880725b2f141da77c94f"
 uuid = "a8cc5b0e-0ffa-5ad4-8c14-923d3ee1735f"
-version = "4.1.1"
+version = "4.2.0"
 
 [[deps.DataAPI]]
 git-tree-sha1 = "abe83f3a2f1b857aac70ef8b269080af17764bbe"
@@ -197,9 +193,9 @@ uuid = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
 version = "1.7.0"
 
 [[deps.ExprTools]]
-git-tree-sha1 = "27415f162e6028e81c72b82ef756bf321213b6ec"
+git-tree-sha1 = "d2e49e7efd29719d6f28b891b0e0e159daa9d2b4"
 uuid = "e2ba6199-217a-4e67-a87a-7c52f15ade04"
-version = "0.1.10"
+version = "0.1.11"
 
 [[deps.FastClosures]]
 git-tree-sha1 = "acebe244d53ee1b461970f8910c235b259e772ef"
@@ -212,9 +208,9 @@ version = "1.11.0"
 
 [[deps.GPUArrays]]
 deps = ["Adapt", "GPUArraysCore", "KernelAbstractions", "LLVM", "LinearAlgebra", "Printf", "Random", "Reexport", "ScopedValues", "Serialization", "SparseArrays", "Statistics"]
-git-tree-sha1 = "99ebe50e3b6537de14d43f1c88963a2e13eff3b7"
+git-tree-sha1 = "4ea5e2aecfd52e595ff6c343410e32f83f5b9bbf"
 uuid = "0c68f7d7-f131-5f86-a1c3-88cf8149b2d7"
-version = "11.5.1"
+version = "11.5.8"
 
     [deps.GPUArrays.extensions]
     JLD2Ext = "JLD2"
@@ -230,11 +226,12 @@ version = "0.2.0"
 
 [[deps.GPUCompiler]]
 deps = ["ExprTools", "InteractiveUtils", "LLVM", "Libdl", "Logging", "PrecompileTools", "Preferences", "Scratch", "Serialization", "TOML", "Tracy", "UUIDs"]
-git-tree-sha1 = "fedfe5e7db7035271c3f58359007f971da1dde87"
-repo-rev = "v1.9.1"
-repo-url = "https://github.com/JuliaGPU/GPUCompiler.jl.git"
+git-tree-sha1 = "b863a2e71f89328e2af69069490aec2448106e59"
 uuid = "61eb1bfa-7361-4325-ad38-22787b887f55"
-version = "1.9.1"
+version = "1.17.1"
+
+    [deps.GPUCompiler.weakdeps]
+    LLVMDowngrader_jll = "f52de702-fb25-5922-94ba-81dd59b07444"
 
 [[deps.GPUToolbox]]
 deps = ["LLVM"]
@@ -242,22 +239,16 @@ git-tree-sha1 = "a589b6c1a0eff953571f5d8b0474f5020831114d"
 uuid = "096a3bc2-3ced-46d0-87f4-dd12716f4bfc"
 version = "1.1.1"
 
-[[deps.HSL]]
-deps = ["HSL_jll", "Libdl", "LinearAlgebra", "OpenBLAS32_jll", "Quadmath", "SparseArrays"]
-git-tree-sha1 = "20e883b46d2a06ccd37d516b1f5415aa97d97655"
-uuid = "34c5aeac-e683-54a6-a0e9-6e0fdc586c50"
-version = "0.5.2"
-
-[[deps.HSL_jll]]
-deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "4b34f6e368aa509b244847e6b0c9b370791bab09"
-uuid = "017b0a0e-03f4-516a-9b91-836bbd1904dd"
-version = "4.0.4+0"
-
 [[deps.HashArrayMappedTries]]
 git-tree-sha1 = "2eaa69a7cab70a52b9687c8bf950a5a93ec895ae"
 uuid = "076d061b-32b6-4027-95e0-9a2c6f6d7e74"
 version = "0.2.0"
+
+[[deps.IntelOpenMP_jll]]
+deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
+git-tree-sha1 = "ad37c091f7d7daf900963171600d7c1c5c3ede32"
+uuid = "1d5cc7b8-4909-519e-a0f8-d0f5ad9712d0"
+version = "2023.2.0+0"
 
 [[deps.InteractiveUtils]]
 deps = ["Markdown"]
@@ -271,9 +262,9 @@ version = "1.0.0"
 
 [[deps.JLLWrappers]]
 deps = ["Artifacts", "Preferences"]
-git-tree-sha1 = "0533e564aae234aff59ab625543145446d8b6ec2"
+git-tree-sha1 = "7204148362dafe5fe6a273f855b8ccbe4df8173e"
 uuid = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
-version = "1.7.1"
+version = "1.8.0"
 
 [[deps.JuliaNVTXCallbacks_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl", "Pkg"]
@@ -288,9 +279,9 @@ version = "1.12.0"
 
 [[deps.KernelAbstractions]]
 deps = ["Adapt", "Atomix", "InteractiveUtils", "MacroTools", "PrecompileTools", "Requires", "StaticArrays", "UUIDs"]
-git-tree-sha1 = "f2e76d3ced51a2a9e185abc0b97494c7273f649f"
+git-tree-sha1 = "a5b87110fa95d711355af44832497745aa93fb52"
 uuid = "63c18a36-062a-441e-b654-da1e3ab1ce7c"
-version = "0.9.41"
+version = "0.9.42"
 
     [deps.KernelAbstractions.extensions]
     EnzymeExt = "EnzymeCore"
@@ -309,10 +300,10 @@ uuid = "40e66cde-538c-5869-a4ad-c39174c6795b"
 version = "0.10.2"
 
 [[deps.LLVM]]
-deps = ["CEnum", "LLVMExtra_jll", "Libdl", "Preferences", "Printf", "Unicode"]
-git-tree-sha1 = "69e4739502b7ab5176117e97e1664ed181c35036"
+deps = ["CEnum", "LLVMExtra_jll", "Libdl", "PrecompileTools", "Preferences", "Printf", "Unicode"]
+git-tree-sha1 = "39c054c8fd8cef1d405ba7e399d70710fdbae46c"
 uuid = "929cbde3-209d-540e-8aea-75f648917ca0"
-version = "9.4.6"
+version = "9.11.0"
 weakdeps = ["BFloat16s"]
 
     [deps.LLVM.extensions]
@@ -320,9 +311,9 @@ weakdeps = ["BFloat16s"]
 
 [[deps.LLVMExtra_jll]]
 deps = ["Artifacts", "JLLWrappers", "LazyArtifacts", "Libdl", "TOML"]
-git-tree-sha1 = "8e76807afb59ebb833e9b131ebf1a8c006510f33"
+git-tree-sha1 = "8886105e8ed2aa53062ae99870840a1e3622aaac"
 uuid = "dad2f222-ce93-54a1-a47d-0025e8a3acab"
-version = "0.0.38+0"
+version = "0.0.44+0"
 
 [[deps.LLVMLoopInfo]]
 git-tree-sha1 = "2e5c102cfc41f48ae4740c7eca7743cc7e7b75ea"
@@ -381,9 +372,9 @@ version = "1.12.0"
 
 [[deps.LinearOperators]]
 deps = ["FastClosures", "LinearAlgebra", "Printf", "SparseArrays", "TimerOutputs"]
-git-tree-sha1 = "ddd5a43cff2692c26f09952d33c9746cfc740d60"
+git-tree-sha1 = "4170853dfdb5ac1374ffb5fcf79c24ba5f0bb8e3"
 uuid = "5c8ed15e-5a4c-59e4-a42b-c7e8811fb125"
-version = "2.13.0"
+version = "2.14.1"
 
     [deps.LinearOperators.extensions]
     LinearOperatorsAMDGPUExt = "AMDGPU"
@@ -392,14 +383,18 @@ version = "2.13.0"
     LinearOperatorsJLArraysExt = "JLArrays"
     LinearOperatorsLDLFactorizationsExt = "LDLFactorizations"
     LinearOperatorsMetalExt = "Metal"
+    LinearOperatorsOpNormExt = ["Arpack", "TSVD", "GenericLinearAlgebra"]
 
     [deps.LinearOperators.weakdeps]
     AMDGPU = "21141c5a-9bdb-4563-92ae-f87d6854732e"
+    Arpack = "7d9fca2a-8960-54d3-9f78-7d1dccf2cb97"
     CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
     ChainRulesCore = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
+    GenericLinearAlgebra = "14197337-ba66-59df-a3e3-ca00e7dcff7a"
     JLArrays = "27aeb0d3-9eb9-45fb-866b-73c2ecf80fcb"
     LDLFactorizations = "40e66cde-538c-5869-a4ad-c39174c6795b"
     Metal = "dde4c033-4e86-420c-a63e-0dd931031962"
+    TSVD = "9449cd9e-2762-5aa3-a617-5413e99d722e"
 
 [[deps.Logging]]
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
@@ -410,6 +405,12 @@ deps = ["Artifacts", "JLLWrappers", "Libdl"]
 git-tree-sha1 = "2eefa8baa858871ae7770c98c3c2a7e46daba5b4"
 uuid = "d00139f3-1899-568f-a2f0-47f597d42d70"
 version = "5.1.3+0"
+
+[[deps.MKL_jll]]
+deps = ["Artifacts", "IntelOpenMP_jll", "JLLWrappers", "LazyArtifacts", "Libdl", "Pkg"]
+git-tree-sha1 = "2ce8695e1e699b68702c03402672a69f54b8aca9"
+uuid = "856f044c-d86e-5d09-b602-aeab76dc8ba7"
+version = "2022.2.0+0"
 
 [[deps.MUMPS_seq_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "Libdl", "METIS_jll", "libblastrampoline_jll"]
@@ -424,11 +425,9 @@ version = "0.5.16"
 
 [[deps.MadNLP]]
 deps = ["LDLFactorizations", "LinearAlgebra", "Logging", "MUMPS_seq_jll", "NLPModels", "OpenBLAS32_jll", "Pkg", "PrecompileTools", "Printf", "SolverCore", "SparseArrays", "SuiteSparse"]
-git-tree-sha1 = "15df5759c271c2b8e841807491ca249c66a9079f"
-repo-rev = "7fed853"
-repo-url = "https://github.com/MadNLP/MadNLP.jl.git"
+git-tree-sha1 = "badbb19b4a53f15f44bbbd082676db999c388927"
 uuid = "2621e9c9-9eb4-46b1-8089-e8c72242dfb6"
-version = "0.9.1"
+version = "0.9.2"
 
     [deps.MadNLP.extensions]
     MadNLPMOI = "MathOptInterface"
@@ -437,31 +436,22 @@ version = "0.9.1"
     MathOptInterface = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
 
 [[deps.MadNLPGPU]]
-deps = ["AMD", "Adapt", "GPUArraysCore", "KernelAbstractions", "LinearAlgebra", "MadNLP", "Metis", "SparseArrays"]
-git-tree-sha1 = "b511e26f9c75b7eb5f0192b1300b6987989f4deb"
-repo-rev = "7fed853"
-repo-subdir = "lib/MadNLPGPU"
-repo-url = "https://github.com/MadNLP/MadNLP.jl.git"
+deps = ["AMD", "CUDA", "CUDSS", "KernelAbstractions", "LinearAlgebra", "MadNLP", "Metis", "SparseArrays"]
+git-tree-sha1 = "d4c03441c0ba6f95dcf619a9a76ed3ee2d068cf8"
 uuid = "d72a61cc-809d-412f-99be-fd81f4b8a598"
 version = "0.8.0"
 
     [deps.MadNLPGPU.extensions]
     MadNLPGPUAMDGPUExt = "AMDGPU"
-    MadNLPGPUCUDAExt = ["CUDA", "CUDSS"]
 
     [deps.MadNLPGPU.weakdeps]
     AMDGPU = "21141c5a-9bdb-4563-92ae-f87d6854732e"
-    CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
-    CUDSS = "45b445bb-4962-46a0-9369-b4df9d0f772e"
 
-[[deps.MadNLPHSL]]
-deps = ["HSL", "LinearAlgebra", "MadNLP"]
-git-tree-sha1 = "b3c4560554a05efca7f651ac783c8ff532c0b1be"
-repo-rev = "7fed853"
-repo-subdir = "lib/MadNLPHSL"
-repo-url = "https://github.com/MadNLP/MadNLP.jl.git"
-uuid = "7fb6135f-58fe-4112-84ca-653cf5be0c77"
-version = "0.7.0"
+[[deps.MadNLPPardiso]]
+deps = ["Libdl", "MKL_jll", "MadNLP", "Pkg"]
+git-tree-sha1 = "262ec8e85bfb6e0fdcdb283f22a788993141df9c"
+uuid = "312ee924-cb12-49df-b284-7304c3902fc0"
+version = "0.4.0"
 
 [[deps.Markdown]]
 deps = ["Base64", "JuliaSyntaxHighlighting", "StyledStrings"]
@@ -517,10 +507,10 @@ uuid = "ca575930-c2e3-43a9-ace4-1e988b2c1908"
 version = "1.3.0"
 
 [[deps.OpenBLAS32_jll]]
-deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "Libdl"]
-git-tree-sha1 = "46cce8b42186882811da4ce1f4c7208b02deb716"
+deps = ["Artifacts", "CompilerSupportLibraries_jll", "JLLWrappers", "Libdl", "libblastrampoline_jll"]
+git-tree-sha1 = "30870d0f2dc0b2dba76b10df1c58c7f018413e56"
 uuid = "656ef2d0-ae68-5445-9ca0-591084a874a2"
-version = "0.3.30+0"
+version = "0.3.34+0"
 
 [[deps.OpenBLAS_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Libdl"]
@@ -533,9 +523,9 @@ uuid = "458c3c95-2e84-50aa-8efc-19380b2a3a95"
 version = "3.5.4+0"
 
 [[deps.OrderedCollections]]
-git-tree-sha1 = "05868e21324cede2207c6f0f466b4bfef6d5e7ee"
+git-tree-sha1 = "94ba93778373a53bfd5a0caaf7d809c445292ff4"
 uuid = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
-version = "1.8.1"
+version = "1.8.2"
 
 [[deps.Pkg]]
 deps = ["Artifacts", "Dates", "Downloads", "FileWatching", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "Random", "SHA", "TOML", "Tar", "UUIDs", "p7zip_jll"]
@@ -548,9 +538,9 @@ weakdeps = ["REPL"]
 
 [[deps.PrecompileTools]]
 deps = ["Preferences"]
-git-tree-sha1 = "07a921781cab75691315adc645096ed5e370cb77"
+git-tree-sha1 = "edbeefc7a4889f528644251bdb5fc9ab5348bc2c"
 uuid = "aea7be01-6a6a-4083-8856-8a6e6704d82a"
-version = "1.3.3"
+version = "1.3.4"
 
 [[deps.Preferences]]
 deps = ["TOML"]
@@ -560,26 +550,22 @@ version = "1.5.2"
 
 [[deps.PrettyTables]]
 deps = ["Crayons", "LaTeXStrings", "Markdown", "PrecompileTools", "Printf", "REPL", "Reexport", "StringManipulation", "Tables"]
-git-tree-sha1 = "624de6279ab7d94fc9f672f0068107eb6619732c"
+git-tree-sha1 = "7cf039cf79bb41afda7336edf2f3ca2115c44f76"
 uuid = "08abe8d2-0d0c-5749-adfa-8a2ac140af0d"
-version = "3.3.2"
+version = "3.4.2"
 
     [deps.PrettyTables.extensions]
+    PrettyTablesExcelExt = "XLSX"
     PrettyTablesTypstryExt = "Typstry"
 
     [deps.PrettyTables.weakdeps]
     Typstry = "f0ed7684-a786-439e-b1e3-3b82803b501e"
+    XLSX = "fdbf4ff8-1666-58a4-91e7-1b58723a45e0"
 
 [[deps.Printf]]
 deps = ["Unicode"]
 uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 version = "1.11.0"
-
-[[deps.Quadmath]]
-deps = ["Compat", "Printf", "Random", "Requires"]
-git-tree-sha1 = "6bc924717c495f24de85867aa94da4de0e6cd1a1"
-uuid = "be4d8f0f-7fa4-5f49-b795-2f01399ab2dd"
-version = "0.5.13"
 
 [[deps.REPL]]
 deps = ["InteractiveUtils", "JuliaSyntaxHighlighting", "Markdown", "Sockets", "StyledStrings", "Unicode"]
@@ -620,9 +606,9 @@ version = "0.7.0"
 
 [[deps.ScopedValues]]
 deps = ["HashArrayMappedTries", "Logging"]
-git-tree-sha1 = "ac4b837d89a58c848e85e698e2a2514e9d59d8f6"
+git-tree-sha1 = "67a144433c4ce877ee6d1ada69a124d6b1ecf7be"
 uuid = "7e506255-f358-4e82-b7e4-beb19740aa63"
-version = "1.6.0"
+version = "1.6.2"
 
 [[deps.Scratch]]
 deps = ["Dates"]
@@ -684,9 +670,9 @@ weakdeps = ["SparseArrays"]
 
 [[deps.StringManipulation]]
 deps = ["PrecompileTools"]
-git-tree-sha1 = "d05693d339e37d6ab134c5ab53c29fce5ee5d7d5"
+git-tree-sha1 = "532e983cd333609f95d618c744fc40d01ea6e17a"
 uuid = "892a3eda-7b42-436c-8928-eab12a02cf0e"
-version = "0.4.4"
+version = "0.4.6"
 
 [[deps.StyledStrings]]
 uuid = "f489334b-da3d-4c2e-b8f0-e476e12c162b"
@@ -714,9 +700,9 @@ version = "1.0.1"
 
 [[deps.Tables]]
 deps = ["DataAPI", "DataValueInterfaces", "IteratorInterfaceExtensions", "OrderedCollections", "TableTraits"]
-git-tree-sha1 = "f2c1efbc8f3a609aadf318094f8fc5204bdaf344"
+git-tree-sha1 = "0f38a06c83f0007bbab3cf911262841c9a0f07e0"
 uuid = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
-version = "1.12.1"
+version = "1.13.0"
 
 [[deps.Tar]]
 deps = ["ArgTools", "SHA"]
@@ -782,7 +768,7 @@ uuid = "1e29f10c-031c-5a83-9565-69cddfc27673"
 version = "1.3.0+0"
 
 [[deps.libMad]]
-deps = ["BFloat16s", "CCOpt", "CUDA", "CUDA_Compiler_jll", "CUDA_Driver_jll", "CUDA_Runtime_jll", "CUDSS", "GPUCompiler", "HSL", "InteractiveUtils", "Libdl", "MadNLP", "MadNLPGPU", "MadNLPHSL", "NLPModels", "PrecompileTools", "Preferences", "SolverCore"]
+deps = ["BFloat16s", "CCOpt", "CUDA", "CUDA_Compiler_jll", "CUDA_Driver_jll", "CUDA_Runtime_jll", "CUDSS", "GPUCompiler", "InteractiveUtils", "Libdl", "MadNLP", "MadNLPGPU", "MadNLPPardiso", "NLPModels", "PrecompileTools", "Preferences", "SolverCore"]
 path = "."
 uuid = "3cb06f27-fa54-49c1-aeea-14d13a711cb4"
 version = "0.1.0"
