@@ -2,6 +2,9 @@ name: build-pardiso-mkl
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - "codex/pardiso-mkl"
   pull_request:
     paths:
       - "Project.toml"
