@@ -23,7 +23,7 @@ Preferences = "21216c6a-2e73-6563-6e65-726566657250"
 SolverCore = "ff4d7338-4cf1-434d-91df-b86cb86fb843"
 
 [sources]
-CCOpt = {url = "https://github.com/MadNLP/CCOpt.jl.git", rev = "master"}
+CCOpt = {url = "https://github.com/MadNLP/CCOpt.jl.git", rev = "cb7080545ef33ce5c430663f4027d4a7a4807bc5"}
 
 [compat]
 BFloat16s = "0.6.1"
