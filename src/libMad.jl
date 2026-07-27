@@ -4,7 +4,9 @@ using Preferences
 using InteractiveUtils
 using MadNLP
 using MadNLP: SparseWrapperModel
-using MadNLPHSL
+@static if Sys.ARCH === :x86_64
+    using MadNLPPardiso
+end
 using NLPModels
 using PrecompileTools: @setup_workload, @compile_workload, verbose
 using Base: unsafe_convert

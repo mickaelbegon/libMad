@@ -9,8 +9,26 @@ As it currently stands we require several environment variables to be set when u
 The following are necessary for any interface:
 
 1. `JULIA_CUDA_USE_COMPAT="false"` This is necessary to make sure that `CUDA_Driver_jll` does not attempt to fork a second julia process which fails as the binary does not exist.
-2. `JULIA_HSL_LIBRARY_PATH="path/to/hsl/lib"` This is necessary to use the HSL linear system solvers: `Ma*7Solver`.
-3. `JULIA_CUDSS_LIBRARY_PATH="path/to/cudss/lib"` This may be necessary if the `CUDA_Runtime_Discovery` package cannot find the cuDSS libraries.
+2. `JULIA_CUDSS_LIBRARY_PATH="path/to/cudss/lib"` This may be necessary if the `CUDA_Runtime_Discovery` package cannot find the cuDSS libraries.
+
+### PARDISO MKL
+
+The x86-64 build includes `MadNLPPardiso.PardisoMKLSolver`. Select it through
+the C option interface with:
+
+```c
+libmad_set_string_option(opts_ptr, "linear_solver", "PardisoMKLSolver");
+```
+
+The backend is not enabled on ARM platforms because Intel oneMKL does not
+provide a native ARM implementation. Set `MKL_NUM_THREADS` or
+`OMP_NUM_THREADS` explicitly when benchmarking to avoid accidental
+oversubscription.
+
+This PARDISO MKL runtime variant intentionally does not depend on
+`HSL`/`MadNLPHSL`, so it can be built without private HSL package credentials.
+MA57 should be distributed as a separate HSL-enabled runtime subject to the
+HSL licence.
 
 And then several language specific issues may occur if the shared library is loaded through, e.g., the CasADi interface for python or Matlab:
 

@@ -140,6 +140,9 @@ end
     else
         linear_solvers = ["CHOLMODSolver", "LapackCPUSolver", "LDLSolver", "MumpsSolver", "UmfpackSolver"]
     end
+    @static if Sys.ARCH === :x86_64
+        push!(linear_solvers, "PardisoMKLSolver")
+    end
     for ls in linear_solvers
         for kkt in keys(KKT_DICT)
             println("kkt: $(kkt), linear solver: $(ls)")

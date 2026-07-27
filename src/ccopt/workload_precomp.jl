@@ -53,6 +53,9 @@ ncc::Int64 = 1
     cctypes = Vector{Clonglong}([0])
     # until we figure out a workaround for HSL we cannot precompile those solvers
     linear_solvers = ["CHOLMODSolver", "LapackCPUSolver", "LDLSolver", "MumpsSolver", "UmfpackSolver"]
+    @static if Sys.ARCH === :x86_64
+        push!(linear_solvers, "PardisoMKLSolver")
+    end
     for ls in linear_solvers
         for kkt in keys(KKT_DICT)
             println("kkt: $(kkt), linear solver: $(ls)")
