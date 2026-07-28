@@ -43,4 +43,6 @@ jobs:
           output=$("$PWD/build/basic_problem" 2>&1)
           echo "$output"
           grep -qi "running with pardiso-mkl" <<< "$output"
+          grep -qi "running with pardiso-mkl-robust" <<< "$output"
           ! grep -qi "unknown type PardisoMKLSolver" <<< "$output"
+          ! grep -qi "unknown type RobustPardisoMKLSolver" <<< "$output"

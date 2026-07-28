@@ -139,6 +139,7 @@ set(LIBMAD_SHARED_LIBRARY_DEPENDENCIES
   ${PROJECT_SOURCE_DIR}/src/nlpmodels.jl
   ${PROJECT_SOURCE_DIR}/src/mpccmodels.jl
   ${PROJECT_SOURCE_DIR}/src/madnlp/gpu.jl
+  ${PROJECT_SOURCE_DIR}/src/madnlp/pardiso_robust.jl
   ${PROJECT_SOURCE_DIR}/src/madnlp/stats.jl
   ${PROJECT_SOURCE_DIR}/src/ccopt/solver.jl
   ${PROJECT_SOURCE_DIR}/src/ccopt/stats.jl
@@ -153,6 +154,7 @@ set(LIBMAD_HEADER_DEPENDENCIES
   ${PROJECT_SOURCE_DIR}/src/nlpmodels.jl
   ${PROJECT_SOURCE_DIR}/src/mpccmodels.jl
   ${PROJECT_SOURCE_DIR}/src/madnlp/gpu.jl
+  ${PROJECT_SOURCE_DIR}/src/madnlp/pardiso_robust.jl
   ${PROJECT_SOURCE_DIR}/src/madnlp/stats.jl
   ${PROJECT_SOURCE_DIR}/src/ccopt/solver.jl
   ${PROJECT_SOURCE_DIR}/src/ccopt/stats.jl

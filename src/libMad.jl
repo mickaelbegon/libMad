@@ -29,6 +29,9 @@ include("options.jl")
 include("nlpmodels.jl")
 include("solver.jl")
 include("stats.jl")
+@static if Sys.ARCH === :x86_64
+    include("madnlp/pardiso_robust.jl")
+end
 # MadNLP Solver interface definition
 # First define the possible types that any given `::Type` option can take.
 # This is important as it allows `--trim` to be smart about what types to keep

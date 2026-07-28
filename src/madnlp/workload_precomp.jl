@@ -142,6 +142,7 @@ end
     end
     @static if Sys.ARCH === :x86_64
         push!(linear_solvers, "PardisoMKLSolver")
+        push!(linear_solvers, "RobustPardisoMKLSolver")
     end
     for ls in linear_solvers
         for kkt in keys(KKT_DICT)

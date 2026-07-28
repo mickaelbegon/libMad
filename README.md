@@ -20,6 +20,19 @@ the C option interface with:
 libmad_set_string_option(opts_ptr, "linear_solver", "PardisoMKLSolver");
 ```
 
+For symmetric-indefinite KKT systems that need more conservative numerical
+defaults, select the robust profile:
+
+```c
+libmad_set_string_option(opts_ptr, "linear_solver", "RobustPardisoMKLSolver");
+```
+
+It uses a `1e-8` tiny-pivot perturbation, enables scaling and symmetric
+weighted matching, selects Bunch-Kaufman pivoting with automatic refinement,
+allows two iterative-refinement steps, and enables the oneMKL sparse-matrix
+checker. The standard `PardisoMKLSolver` remains unchanged for baseline
+comparisons.
+
 The backend is not enabled on ARM platforms because Intel oneMKL does not
 provide a native ARM implementation. Set `MKL_NUM_THREADS` or
 `OMP_NUM_THREADS` explicitly when benchmarking to avoid accidental

@@ -12,6 +12,7 @@ libmad_jl_depends = [ 'src/libMad.jl',
                       'src/options.jl',
                       'src/solver.jl',
                       'src/stats.jl',
+                      'src/madnlp/pardiso_robust.jl',
                       'src/madnlp.jl',
                       'src/nlpmodels.jl'
                     ]
